@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽 재활용 | SHIP</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Gothic+A1:wght@300 & display=swap');
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+     header{
+           width:100%;
+           height:250px;
+           border:0px solid #cccccc;
+           margin-top:0px;
+           background-color: aliceblue;
+       }
+       #logo{
+           float:left;
+           margin:10px;
+           border-bottom: 0px dotted gray;
+           
+       }
+       #Ship{
+           font-family: 'Permanent Marker', cursive;
+           color: #123ad9;
+       }
+       #top{
+           float: right;
+           margin:10px;
+       }
+       #share1{
+        float: left;
+        margin-top: 60px;
+        margin-left: 79%;
+       }
+       #share2{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       #share3{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       nav {
+          width: 100%;
+          height:80px;
+          margin-top: 0px;
+          margin-bottom:50px;
+          border-top: 1px solid #dde5ec;
+          border-bottom: 2px solid #dde5ec;
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background-color: white;
+       }
+       #AA{
+        font-family: 'Gothic A1', 산세리프체;
+       }
+       #BB{
+        font-family:'Noto Sans KR', sans-serif;
+       }
+    
+    ul li{
+       margin: 0;
+       padding: 0px;
+       list-style: none;
+    }
+       
+      .sticky{
+        position: sticky;
+        top: 0px;
+      }
+
+      section{
+           float: left;
+           border:0px solid #cccccc;
+           margin-top:5px;
+           margin-left: 35%;
+       }
+
+       aside{
+           float: right;
+           border:0px solid #cccccc;
+           margin-top:30px;
+           margin-right: 15%;
+           
+       }
+       aside li{
+        margin-top: 55px;
+        margin-bottom:50px;
+        margin-left:10px;
+        list-style-type: none;
+        border-bottom: 0px dotted gray;
+       }
+       #question{
+        width: 100%;
+        height: 400px;
+        background-color: aliceblue;
+        margin-top: 50px;
+       }
+
+       footer{
+           border: 0px solid #cccccc;
+           width:100%;
+           height:100px;
+           margin-top:0px;
+           background-color: rgb(100, 238, 192);
+       }
+       .clear{
+           clear: both;
+       }
+       #address{
+           float: left;
+           margin-top: 30px;
+           padding-left: 10px;
+        }
+       #customer{
+           float: right;
+           margin-top:30px;
+           padding-right: 10px;
+       }
+       #page{
+           width: 1500px;
+           margin: auto;
+           border: 0px solid #cccccc;
+       }
+       h1{
+           font-family: 'Jua', sans-serif;
+       }
+       .accent{
+           font-weight: bold;
+       }  
+       .accent2{
+           font-variant: small-caps;
+       } 
+
+    #main-menu{
+        margin-left: 50px;
+    }
+    #main-menu > li {
+       float: left;
+       position: relative;
+       width: 230px;
+    }
+    #main-menu > li > a {
+       
+       
+       text-align: center;
+       text-decoration: none;
+       letter-spacing: 0.05em;
+       display: block;
+       padding: 14px 36px;
+       text-shadow: 1px 1px 1px rgba(8, 62, 255, 0.2);
+    }
+    
+    #sub-menu {
+       position: absolute;
+       width: max-content;
+       background: #baeeff;
+       visibility: hidden;
+       font-size: smaller;
+       border-radius: 5px;
+    }
+    #sub-menu > li {
+       padding: 16px 28px;
+    }
+    #sub-menu > li >  a {
+       color: rgb(0, 0, 0);
+       text-decoration: none;
+    }
+    #main-menu > li:hover #sub-menu {
+       
+       visibility: visible;
+    }
+    #sub-menu > li >  a:hover {
+        color: rgb(0, 95, 238);
+    }
+    
+    a:link{
+        color: black;
+       }
+    a:hover{
+          color: rgb(0, 95, 238);
+      }
+      
+  
+   .wrapper {
+        margin-top: 150px;
+        padding-top: 70px;
+        width: 100%;
+        height: 160px;
+        font-family: 'SBAggroB';
+        font-size: 50pt;
+        text-align: center;
+        color:white ;
+        background-color: #0d2792;
+        text-shadow: 10px 3px 0px rgb(12, 80, 182);
+        margin-bottom: 200px;
+        
+    }
+
+    .wrapper:hover .typing-demo{
+        
+        width: 100%;
+        animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+       
+    }
+    @keyframes typing {
+      from {
+             width: 0
+        }
+    }
+    
+    @keyframes blink {
+      50% {
+             border-color: transparent
+        }
+    }
+
+
+    #content{
+        
+        font-family: 'Noto Sans KR', sans-serif;
+
+    }
+    #big{
+        font-size: x-large;
+    }
+    .ques2{
+        margin-top: 80px;
+        padding-top: 10px;
+        width: 100%;
+        height: 160px;
+        font-family: 'SBAggroB';
+        font-size: 50pt;
+        text-align: center;
+        background-color: white;
+        color: rgb(0, 79, 249);
+    }
+    #word1{
+        font-family: 'SBAggroB';
+        color: rgb(101, 211, 255);
+        font-size: 25pt;
+        float: left;
+        margin-left: 5%;
+
+    }
+    
+    
+    #foot{
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        border-top: 3px solid rgb(100, 238, 192);
+    }
+    #ment{
+        text-align: center;
+        font-family: 'SBAggroB';
+        padding-bottom: 0;
+        float: left;
+        margin-left: 45%;
+        margin-top: 150px;
+    }
+    #turtle{
+        float: left;
+        margin-left: 3%;
+        padding-bottom: 0;
+        margin-top: 150px;
+
+    }
+    #just{
+        float: right;
+        margin-right: 3%;
+        padding-bottom: 0;
+        margin-top: 80px;
+        
+    }
+    #txt2{
+      font-family: 'SBAggroB';
+      float: left;
+      margin-left: 48%;
+      color: rgb(0, 56, 198);
+      font-weight: lighter;
+   }
+   #cycling{
+    float: right;
+   }
+   thead{
+    background-color: rgb(231, 244, 255);
+   }
+   table{
+    width: 100%;
+    border: 1px solid rgb(167, 191, 252);
+    border-radius: 55px;
+    border-collapse: collapse;
+   }
+   th, td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(167, 191, 252);
+   }
+   #Q{
+    padding-top: 60px;
+    font-family: 'SBAggroB';
+    color: rgb(0, 79, 249);
+    float: left;
+    margin-left: 6%;
+    font-size: 30pt;
+   }
+   #A{
+    font-family: 'SBAggroB';
+    color: rgb(132, 171, 255);
+    float: left;
+    margin-left: 10%;
+    font-size: 15pt;
+    font-weight: lighter;
+    margin-top: 10px;
+   }
+   #Q2{
+    font-family: 'SBAggroB';
+    color: rgb(0, 79, 249);
+    float: right;
+    margin-right: 6%;
+    font-size: 30pt;
+    margin-top: 45px;
+   }
+   #A2{
+    font-family: 'SBAggroB';
+    color: rgb(132, 171, 255);
+    float: right;
+    margin-right: 6%;
+    font-size: 15pt;
+    font-weight: lighter;
+    margin-top: 10px;
+   }
+   #more{
+    font-family: 'SBAggroB';
+    color: rgba(0, 0, 0, 0.637);
+    float: right;
+    margin-right: 35%;
+    font-size: 10pt;
+    font-weight: lighter;
+    padding-top: 100px;
+   }
+
+    </style>
+</head>
+<body id="page">
+
+    <header>
+
+    <div id="logo">
+       <h1 id="Ship"> <img src="image\Ship.png" width="160"> SHIP</h1>  
+    </div>
+    <div id="top">
+        로그인 | <a href="test_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
+    </div>
+    <div id="share1"> <img src="image\kaka.png" width="30"> </div>
+    <div id="share2"> <img src="image\twitP.png" width="30"> </div>
+    <div id="share2"> <img src="image\insta.png" width="30"> </div>
+
+    </header>
+
+  
+    <nav class="sticky" id="content" >
+        <nav role="navigation">
+            <ul id="main-menu">
+              <li ><a href="#">SHIP 소개</a>
+              <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">결성 계기</a></li>
+                <li><a href="#" aria-label="subemnu">캠페인 활동</a></li>
+              </ul>
+              </li>
+    
+              <li><a href="#">바다의 고통</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">바다의 피해</a></li>
+                  <li><a href="#" aria-label="subemnu">버려진 쓰레기</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#">바다 지키기</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">봉사 활동</a></li>
+                  <li><a href="#" aria-label="subemnu">일상 속 작은 실천</a></li>
+                  <li><a href="#" aria-label="subemnu">제대로 재활용</a></li>
+                  <li><a href="#" aria-label="subemnu">후원</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="test_commu.html">커뮤니티</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+    </nav>
+   
+    <div class="clear"></div>
+    
+    <div id="txt2"> #제대로 재활용</div>
+    <div class="clear"></div>
+
+   
+    <section>
+        <div class="ques2">환경을 지키는 3R</div>
+        
+    </section>
+    <div class="clear"></div>
+    <span id="word1" >
+        REduce <br>
+        REcycle ▷ <br>
+        REuse <br>
+        </span>
+    <aside>
+        <img id="cycling" src="image\cycle.png" width="150">
+        <table>
+            <thead>
+            <tr>
+                <th>구분</th>
+                <th>가능 품목</th>
+                <th>불가능 품목</th>
+            </tr>
+            </thead>
+
+            <tr>
+                <th>종이류</th>
+                <td>신문지, 책, 노트 폐지, 상자류</td>
+                <td>비닐코팅된 종이, 사진, 스티커 스프링등의 복합재질</td>
+            </tr>
+
+            <tr>
+                <th>종이팩</th>
+                <td>우유팩,두유팩 등 음료팩</td>
+                <td>내용물이 들어 있는 경우</td>
+            </tr>
+
+            <tr>
+                <th>병류</th>
+                <td>맥주병, 소주병, 음료수병 등</td>
+                <td>판유리, 거울, 도자기, 사기그릇</td>
+            </tr>
+
+            <tr>
+                <th>캔, 고철류</th>
+                <td>철캔, 알루미늄캔 등 </td>
+                <td>패인트통, 유해물질을 담았던 통</td>
+            </tr>
+
+            <tr>
+                <th>플라스틱류</th>
+                <td>페트병류(음료수,생수), 세제용기</td>
+                <td>복합재질 제품- 소형전자제품, 완구, 테이프등<br>열에 녹지 않는 식기류,재떨이 등</td>
+            </tr>
+
+            <tr>
+                <th>비닐류</th>
+                <td>1회용 비닐봉지, 라면봉지, 과자봉지 등</td>
+                <td>이물질이 묻은 것<br>음식물 담은 봉지, 스프봉지 등</td>
+            </tr>
+
+            <tr>
+                <th>스티로폼</th>
+                <td>과일상자, 전자제품 완충재 등</td>
+                <td>이물지(비닐 포함)이 묻은 것</td>
+            </tr>
+        </table>
+
+    </aside>
+    <div class="clear"></div>
+    
+    <div id="question">
+    <div id="Q"> Q. 종이 빨대는 재활용인가요?</div>
+    <div id="A">  종이 빨대로 음료를 마시면 음료수등의 이물질이 빨대로 흡수됩니다. 제활용이 어려우니 종량재 봉투에 넣어주세요.</div>
+    <div id="Q2"> Q. 컵라면 용기는 재활용해도 되나요?</div>
+    <div id="A2">  마찬가지로 컵에 라면 국물이 스며들어 재활용할 수 없습니다. 종량제 봉투에 넣어주세요.</div>
+    <div id="more">이외 추가로 궁금하신 점은 커뮤니티에 남겨주시면 정기적으로 답변을 도와드리고 있습니다.</div>
+    </div>
+    
+       
+
+    <div id="foot">
+        <div id="turtle">
+        <img src="image\icon.png" width="100"></div>
+        <span id="ment">
+        더 이상 외면할 수 없는 환경 문제, 보고만 있을 수 없다<br>
+        우리는 하나뿐인 지구의 소중한 바다를 지키기 위해 한 배를 탄 사람들이다
+        </span>
+        <div id="just">
+        <img src="image\win.png" width="120"></div>
+    </div>
+
+
+    
+
+
+
+    <footer>
+        
+        <div id="address">
+            홈페이지 관리자 : 함경민  |  관리자 번호 123-456-0608
+        </div>
+        <div id="customer">
+            고객센터 0510-0608
+        </div>
+        
+  
+    </footer>
+    
+
+</body>
+</html>

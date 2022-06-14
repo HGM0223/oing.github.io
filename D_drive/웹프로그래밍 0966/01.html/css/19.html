@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식/자손 선택자</title>
+    <style>
+       /*
+       div strong{
+            color:magenta;자손
+        }
+
+        div > h1{
+            자식
+            color:blue;
+        }
+        #part ol{
+            color:gold;
+            font-size:20px;
+        }
+        .box1{
+            box-sizing:content-box; 콘텐츠 영역 기준
+            width:300px;콘텐츠 영역 너비
+            height:150px;높이*
+            margin:10px;마진
+            padding: 30px;패딩
+            border:2px solid red;테두리
+
+        }
+        .box1{
+            box-sizing:border-box;테두리까지 (박스전체) 기준
+            width:300px;박스 모델 전체 너비
+            height:150px;박스 높이
+            margin:10px;마진
+            padding: 30px;패딩
+            border:2px solid red;테두리
+
+        }
+        .floatA{
+            float: right;
+            margin-right:50px;
+        }
+        div{
+        width:200px;
+        height:100px;
+        border:2px solid #666666
+        }
+        #ba{
+        float:left;
+        }
+        #bb{
+        float:right;
+        }
+        #let{
+            display:black;
+            margin:10px;
+            border:5px solid #000000;
+            float:right; 인라인처럼 오른쪽부터 정렬됨
+        }
+        .clear{
+            clear:both; float속성을 지울 수 있는 clear속성(오른쪽으로 정렬시키다 아랫줄로 내려옴)
+        } */
+        div, img, p, ul,li{
+            border:0px solid red;
+        }
+        li{
+            list-style-type: none;
+        }
+        #images{
+            float:left;
+        }
+        #menu{
+            float:right;
+            font-weight: bold;
+            margin-top:-10px;
+        }
+        #menu li{
+            padding:20px;
+            border-bottom: 2px dashed gray;
+            line-height: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #desc{
+            width:500px;
+            float:left;
+            margin-left: 50px;
+            margin-top: -15px;
+        }
+        body{
+            margin:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="images"> 
+    <img src="./image/cat2.jpg" width="300px">
+    </div>
+
+    <div id="desc">
+    <h3 >고양이와 나비</h3>
+    <p> 귀여운 아기 고양이가 노란 나비를 따라갑니다.</p>
+    </div>
+
+    
+    <ul id="menu">
+        <li><a href="삼색고양이.html">삼색 고양이</a></li>
+        <li><a href="검은고양이.html">검은 고양이</a></li>
+        <li><a href="치즈고양이.html">치즈 고양이</a></li>
+        <li><a href="샴고양이.html">샴 고양이</a></li>
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>
+        <h1>컴퓨터 소프트웨어 공학과</h1>
+        <h2><strong>웹프로그래밍 기초</strong></h2>
+        <ul>
+            <li> html5</li>
+            <li><strong>css</strong></li>
+        </ul>
+        <strong>60점 미만은 F!</strong>
+    </div>
+
+<div>
+    <h1>동양미래대학교</h1>
+    <section id="part">
+        <h1>인문계열</h1>
+        <h1>공학계열</h1>
+        <ol type=a>
+            <li>컴퓨터소프트웨어공학과</il>
+            <li>건축공학과</li>
+            <il>기계공학과</li>
+        </ol>
+    </section>
+    <h1>웹프로그래밍 기초</h1>
+</div>
+
+<div class="box1"> box-sizing="content-box"
+<br>좌아 패딩 60 테두리 4 너비300, 364 </div>
+<div class="box2">
+<br>300-60-4=326</div> 
+</div>
+
+<img src="./image/cat2.jpg" class="floatA"> ABCDEF6
+<h1>바쁜 3,4학년을 위한 빠른 분수</h1>
+<h2>3,4</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Odit placeat doloribus deserunt, unde quasi delectus pariatur quidem.
+     Nostrum velit similique cupiditate quod hic vitae laboriosam nisi doloribus expedita. 
+     Molestiae, porro!</p>
+
+     <div id="ba">boxA</div>
+    <div id="bb">boxB</div>
+
+<img id="let" class="clear" src="./image/cat2.jpg" width="200">
+<img id="let" class="clear" src="./image/cat2.jpg" width="200">
+<img id="let" src="./image/cat2.jpg" width="200">
+<img id="let" class="clear" src="./image/cat2.jpg" width="200">
+<img id="let" src="./image/cat2.jpg" width="200">
+<img id="let" src="./image/cat2.jpg" width="200">
+
+
+
+
+
+-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Single+Day&display=swap" rel="stylesheet">
+    <script src="./js/prefixfree.min.js"></script>
+<style>
+    
+    .overflow{
+        white-space: nowrap; /*줄바꿈 없음*/
+        width: 150px;
+        height: 100px;
+        border: 1px solid #f00;
+        overflow: hidden; /*벗어난 영역은 보이지 않는다*/
+        overflow: auto;
+        overflow: scroll; /*양쪽 스크롤바 생김*/
+        overflow: auto;
+        overflow: visible;
+        text-overflow: ellipsis; /*생략부호*/
+    }
+    .overflow:hover{
+        overflow: visible;
+    }
+
+  h1{
+        letter-spacing: 0.5em;
+    } 
+
+
+</style>
+</head>
+<body>
+         <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore, odio modi repellendus at similique nobis quaerat ullam animi repellat, 
+            quo velit accusantium exercitationem mollitia amet obcaecati dolorum. 
+            Suscipit, neque fugiat.</p>   
+        
+
+
+</body>
+
+</body>
+</html>
+
+
+<!--
+    p{
+        text-align: left;
+        text-align: right;
+        text-align: center;
+        text-align: justify; /*양쪽 정렬*/
+        text-indent: 20px;
+        text-indent: 10%; /*브라우저의 상대적인 너비만큼 조절*/
+        line-height: 2;
+        line-height: 15px; /*줄간격*/
+    }
+    p{
+        white-space: nowrap;      /*줄바꿈 없음*/
+        white-space:pre ;         /*소스대로 보여짐*/
+        white-space: pre-line;    /*자동 줄바꿈*/
+        white-space: pre-wrap;    /*줄바꿈 표기보여줌*/
+        letter-spacing: 0.1em;    /*자간 간격*/
+        word-spacing: 1em;        /*단어 간격*/
+    }
+     .box:hover{
+       -webkit-transform:rotate(15deg);
+       -moz-transform:rotate(15deg);
+       -o-transform:rotate(15deg);
+       -ms-transform:rotate(15deg);
+       transform:rotate(15deg); /*45도 회전*/
+       font-family: 궁서체;
+
+       width:100px;
+       height:50px;
+       background-color: rgb(35, 255, 244);
+       
+     }
+     .myfont{
+       font-family:"Nanum Brush Script",돋움;
+       font-size :30px;
+     }
+     .myfont2{
+       font-family:"Single Day",돋움;
+       font-size:30px;
+     }
+     .f1{
+        font-size:2em;
+     }
+     .f2{
+       font-size:1ex; /*2em의 절반값 */
+     }
+   p{
+       /*font-weight:bold;*/
+       font-weight: lighter;
+   }
+   .accent{
+       font-variant:small-caps; /*작은 대문자*/
+       font-weight:bold;
+   }
+
+   .rgb1{
+       background-color: #ff0000;
+   }
+   .rgb2{
+       background-color: #00ffff;
+   }
+   .rgba{
+       background-color: #ffff00ff; /*노랑*/
+       background-color: #ffff0000; /*투명 노랑*/
+   }
+   .hslr{
+       background-color: hsl(0,100%,50%);
+       /*(0,0%,50%) 회색
+       (0,100%,0%)검정
+       (0,100%,100% )흰색 */
+       }
+
+    .hslg{ background-color: hsl(120,100%,50%);
+    }
+    .hslb{
+        background-color: hsl(240,100%,50%);/*background-color:hsla(240,100%,50%,0) 0~11투명도 */
+    }
+    .txt1{
+        text-decoration: uppercase; /*대문자*/
+    }
+    .txt2{
+        text-decoration: capitalize; /*첫 글자만 대문자*/
+    }
+    h1{
+        font-size: 100px;
+        font-family:"Arial Rounded MT";
+    }
+    .shadow1{
+        color: orange;
+        text-shadow: 1px 1px 10px;
+    }
+    .shadow2{
+        text-shadow: 5px 5px 3px #f00;
+    }
+    .shadow1{
+        color: #fff;
+        text-shadow: 7px -7px 5px #000;
+    } <div class="box"> mouse over </div> 
+<p class="myfont">동양미래대학교</p>
+<p class="myfont2">동양미래대학교</p>
+
+<P>ABCDEFG</P>
+<P class="f1">ABCDEF</P>
+
+<P>abcdef</P>
+<P class="f2">abcdef</P>
+
+<span class="accent">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. 
+Tempore, odio modi repellendus at similique nobis quaerat ullam animi repellat, quo velit accusantium exercitationem mollitia amet obcaecati dolorum. 
+Suscipit, neque fugiat.
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Tempore, odio modi repellendus at similique nobis quaerat ullam animi repellat, quo velit accusantium exercitationem mollitia amet obcaecati dolorum. 
+Suscipit, neque fugiat.</p>
+
+<h1 class="rgb1">색을 공부하고 있습니다.</h1>
+<h2 class="rgb2">색을 공부하고 있습니다.</h2>
+<h3 class="rgba">색을 공부하고 있습니다.</h3>
+
+<h1 class="hslr">색을 공부하고 있습니다.</h1>
+<h1 class="hslg">색을 공부하고 있습니다.</h1>
+<h1 class="hslb" textdecoration>색을 공부하고 있습니다.</h1>
+
+<h1>Have to study</h1>
+<ul>
+    <li class="txt1">html</li>
+    <li class="txt1">css</li>
+    <li class="txt2">javascript</li>
+</ul>
+
+<h1 class="shadow1">html5</h1>
+<h1 class="shadow2">html5</h2>
+<h1 class="shadow3">html5</h3> -->

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <!--<style> @import url(mystyle01.css);</style>-->
+    <style>@import "mystyle01.css";</style>
+
+    <title>연습중</title>
+</head>
+<body>
+    
+   <!-- <fieldset>
+        <legend> 신청과목</legend>
+        <P>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</P>
+        <label><input type="radio" name="subject" value="speaking"> 회화</label>
+        <label><input type="radio" name="subject" value="grammar"> 문법</label>
+        <label><input type="radio" name="subject" value="writing"> 작문</label>
+    </fieldset>
+
+    <fieldset>
+        <legend> 메일링</legend>
+        <P>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)</P>
+        <label><input type="checkbox" name="mailing1" value="news"> 해외 단신</label>
+        <label><input type="checkbox" name="mailing2" value="dialog"> 5분 회화</label>
+        <label><input type="checkbox" name="mailing3" value="pops"> 모닝팝스</label>
+    </fieldset>
+
+    <form>
+        <fieldset>
+            <legend>등록 정보</legend>
+        <table border="0" width="400">
+            <tr>
+                <td>참여인원(최대 10명)</td>
+                <td><input type="number" value="1" min="0" max="10"> </td>
+
+            </tr>
+
+            <tr>
+                <td>지원물품(1인당 5개)</td>
+                <td><input type="number" value="1" min="0" max="50"> </td>
+
+            </tr>
+
+            <tr>
+                <td>희망 단계 (상, 중, 하)</td>
+                <td>상 <input type="range" value="1" min="1" max="3"> 하 </td>
+
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+
+    <form>
+        <input type="date"><p></p>
+        <input type="time"><p></p>
+        <input type="button" value="버튼"><p></p>
+        <input type="submit" value="전송"><p></p>
+        <input type="reset" value="취소"><p></p>
+        <input type="image" src="./image/cat.jpg"><p></p>
+        <input type="date"><p></p>
+        <button type="button"><image src="./image/cat.jpg"> </button> <p></p>
+
+    </form>
+
+    <form>
+        이름 <input type= "text" autofocus > <p></p>
+        전화번호<input type= "text" placeholder="숫자만 입력" > <p></p>
+        전공<input type= "text" value="컴퓨터소프트웨어과" readonly > <p></p>
+        학년<input type= "text" required> <p></p>
+        <input type= "submit" >
+  </form>
+
+  <form>
+    <fieldset>
+        <legend>개인 정보</legend>
+    <table border="0" width="400">
+        <tr>
+            <td>이름</td>
+            <td><input type="text" placeholder="여벡없이 입력"> </td>
+
+        </tr>
+
+        <tr>
+            <td>연락처</td>
+            <td><input type="text" placeholder="연락 가능한 번호"> </td>
+
+        </tr>
+
+        
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>배송지 정보</legend>
+<table border="0" width="400">
+    <tr>
+        <td>주소</td>
+        <td><input type="text" > </td>
+
+    </tr>
+
+    <tr>
+        <td>전화번호</td>
+        <td><input type="text" > </td>
+
+    </tr>
+
+    
+</table>
+</fieldset>
+
+<fieldset>
+    <legend>주문 정보</legend>
+<table border="0" width="400">
+    <tr>
+        <td><label><input type="checkbox" name="order" value=>과테말라 안티구아 (100g)_최대 5개</label></td>
+        <td><input type="number" value="0" min="0" max="5"> </td>
+
+    </tr>
+
+    <tr>
+        <td><label><input type="checkbox" name="order" value=>인도네시아 만델링 (100g)</label></td>
+        <td><input type="number" value="0" min="0" max="5"> </td>
+
+    </tr>
+
+    <tr>
+        <td><label><input type="checkbox" name="order" value=> 탐나는 도다(블렌딩) (100g)</label></td>
+        <td><input type="number" value="0" min="0" max="5"> </td>
+
+    </tr>
+
+    
+</table>
+</fieldset>
+
+  <form name="form1">
+      <select name="sel1">
+          <optgroup label="공과대학">
+          <option value="건축">건축공학과</option>
+          <option value="기계">기계공학과</option>
+          <option value="산업">산업공학과</option>
+          <option value="전기">전기전자공학과</option>
+          <option value="컴퓨터"selected>컴퓨터공학과</option>
+          <option value="화학"> 화학공학과</option>
+        </optgroup>
+      </select>
+
+</form>
+
+<form>
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <option value="grammar" label="문법"></option>  
+        <option value="voca" label="어휘"></option>
+        <option value="speaking" label="회화"></option>
+        <option value="listening" label="리스닝"></option>  
+        <option value="news" label="뉴스청취"></option>
+    </datalist>
+
+</form>
+
+<form>
+    <textarea cols="100" row="10">
+        메세지를 적으세요
+    </textarea>
+</form>
+
+<form oninput ="result.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" name="num1" value="0">
+    <input type="number" name="num2" value="0">
+    =<output name="result" for="num"></output>
+</form>
+    
+<form>
+    10초 남음<progress value ="5.0" max="6.0"></progress>
+</form>
+
+<form>
+    점유율 0.8 <meter value="0.8"></meter><p></p>
+    사용량 64% <meter min="0" max="100" value="64"></meter><p></p>
+    트레픽A : <meter min="0" max="100" optimum="50" value="60"></meter><p></p>
+    트레픽B : <meter low="0.3" high="0.5" value="0.22"></meter><p></p>
+    트레픽C : <meter low="0.25" high="0.75" optimum="0.8" value="0.2"></meter><p></p>
+</form>
+-->
+
+<form>
+    <h1>도형 서식 폼 만들기</h1>
+    <fieldset>
+        <legend>도형 서식 입력</legend>
+        선종류 
+        <form name="type"> 
+            <select name="line">
+                <option value="없음"> 선없음</option>
+                <option value="실선"> 실선</option>
+                <option value="점선"> 점선</option>
+            </select>
+        </form> 
+
+        <form>
+            <table>
+                <tr>
+                  <td>선두께 <input type="number" value="1" min="0" max="20"></td>
+                  <td>선색 <input type="color" style="background-color:mediumaquamarine;"></td>
+                </tr>
+             </table>
+
+        </form>
+        투명도 <input type="text"  list="transparency">
+        <datalist id="transparency">
+            <option value="0" label="투명"></option>
+            <option value="50" label="중간"></option>
+            <option value="100" label="불투명"></option>
+        </datalist>
+    </fieldset>
+        <form>
+
+
+
+
+        </form>
+
+</body>
+</html>   

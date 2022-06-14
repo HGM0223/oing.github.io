@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style-type: none;
+        }
+        .dropdown{
+            display:line-block;
+            border: solid 1px red;
+            position: relative;
+        }
+        .dropdownContents{
+            background-color: yellow;
+            display: none;
+            width: 100px;
+            padding:10px;
+            line-height: 30px;
+            position: absolute;
+        }
+        .dropdown:hover .dropdownContents{
+            display: block;
+            background-color: aqua;
+        }
+
+        @keyframes textColorAnimation{
+        
+            0%{color : red;}
+            40%{ color : yellow;}
+            100%{ color: blue;}
+
+        }
+        h1{
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bomb{
+            
+        from{
+            font-size: 500%;
+            color: red;
+        }
+        to{
+            font-size: 100%;
+            color: white;
+        }
+    }
+        h2{
+            animation-name: bomb;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+        }
+        div:hover{
+            width: 300px;
+            background: yellow;
+        }
+        span{
+            transition: font-size;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>내가 졸아하는 과일은
+            <div class="dropdownContents">
+            <li>포도</li>
+            <li>복숭아</li>
+            <li>수박</li>
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="dropdown">
+      <ul> 내가 좋아하는 꽃은
+        <div class="dropdownContents"> 
+        <li>안개꽃</li>
+        <li>백합</li>
+        <li>마가렛</li>
+        </div>
+      </ul>
+    </div>
+
+
+    <p>
+        <h1>재밌다</h1>
+        5초간 red, yellow,blue로 무한 반복합니다.
+    </p>
+
+    <h3>꽝!</h3>
+
+    <div>
+        마우스를 올려보세요.
+    </div>
+
+    <p><span>꽝! 글자에 마우스를 올려보세요.</span></p>
+
+
+</body>
+</html>
